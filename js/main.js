@@ -18,7 +18,7 @@ function saveBookmark(e){
 		url: siteURL
 	}
 
-//test if bookmarks is null
+// Test if bookmarks array is null
 if(localStorage.getItem('bookmarks') === null){
 	var bookmarks = [];
 	bookmarks.push(bookmark);
@@ -32,7 +32,7 @@ else{
 }
 
 	// Clear form
-	document.getElementById('myForm').reset;
+	document.getElementById('myForm').reset();
 
 	fetchBookmarks();
 
